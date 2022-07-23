@@ -4,12 +4,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.librari.librari.Data;
@@ -46,16 +44,8 @@ public class HomeFragment extends Fragment {
         arrayData.add(new Data("Book" , "suzan" , R.drawable.ic_launcher_background , "https://www.orimi.com/pdf-test.pdf"));
 
 
-
-        // pdf
-
         object = new rvAdapter(getActivity(),arrayData);
         binding.recyclerView.setAdapter(object);
-
-
-
-
-
         return binding.getRoot();
     }
 
