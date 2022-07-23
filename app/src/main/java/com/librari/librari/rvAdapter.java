@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.librari.librari.ui.home.HomeFragment;
+
 import java.util.ArrayList;
 
 public class rvAdapter extends RecyclerView.Adapter<rvAdapter.viewHolder> {
@@ -19,7 +21,7 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.viewHolder> {
     private ArrayList<Data> arData;
     View view ;
 
-    public rvAdapter(Activity activity, ArrayList<Data> arData) {
+    public rvAdapter(HomeFragment activity, ArrayList<Data> arData) {
         this.activity = activity;
         this.arData = arData;
     }
