@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 
 import java.io.Serializable;
 @Entity(tableName = "Room")
-class PDF implements Serializable {
+public class PDFdatabase implements Serializable {
 
     @PrimaryKey(autoGenerate = true)
     int id=0;

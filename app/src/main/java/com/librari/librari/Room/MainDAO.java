@@ -12,10 +12,10 @@ import java.util.List;
 public interface MainDAO {
 
     @Insert(onConflict = REPLACE)
-    void insert(PDF pdf);
+    void insert(PDFdatabase pdf);
 
     @Query("SELECT * FROM Room ORDER BY id DESC" )
-    List<PDF> getAll();
+    List<PDFdatabase> getAll();
 
     @Query("UPDATE Room SET bookName = :bookName ,authorName = :authorName WHERE id = :id ")
     void update(int id , String bookName , String authorName);

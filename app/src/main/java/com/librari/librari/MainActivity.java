@@ -1,8 +1,5 @@
 package com.librari.librari;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.util.ArrayList;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
     EditText username , password ;
@@ -31,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 public void onClick(View v) {
                     if(username.getText().toString().equals("levi") & password.getText().toString().equals("library"))
                     {
-                        Intent intent = new Intent(MainActivity.this, Visitor.class);
+                        Intent intent = new Intent(MainActivity.this, AdminFragment.class);
                         startActivity(intent);
                     }
                 }

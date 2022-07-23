@@ -1,6 +1,9 @@
 package com.librari.librari;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
@@ -23,6 +26,8 @@ public class AdminFragment extends AppCompatActivity {
     ArrayList<Data> arrayData;
     rvAdapter object;
 
+    Button ADD_click;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,7 +45,7 @@ public class AdminFragment extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
-        //Intent intent2 = getIntent();
+        ADD_click =  findViewById(R.id.Btn_Add);
 
         arrayData = new ArrayList<>();
 
@@ -64,6 +69,14 @@ public class AdminFragment extends AppCompatActivity {
         rv.setAdapter(object);
 
 
+        ADD_click.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(AdminFragment.this , AddBook.class);
+                startActivityForResult(intent , 154);
+
+            }
+        });
     }
 
 }
