@@ -15,9 +15,7 @@ public class Data {
         return picture;
     }
 
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
-    }
+    public void setBookName(String bookName) {this.bookName = bookName;}
 
     public void setBookLink(String bookLink) {this.bookLink = bookLink;}
 
