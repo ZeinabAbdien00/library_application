@@ -44,6 +44,15 @@ public class AdminFragment extends AppCompatActivity {
 
         arrayData = new ArrayList<>();
 
+        arrayData.add(new Data("Book" , "suzan" , R.drawable.ic_launcher_background , "URL"));
+        arrayData.add(new Data("Book" , "suzan" , R.drawable.ic_launcher_background , "URL"));
+        arrayData.add(new Data("Book" , "suzan" , R.drawable.ic_launcher_background , "URL"));
+        arrayData.add(new Data("Book" , "suzan" , R.drawable.ic_launcher_background , "URL"));
+        arrayData.add(new Data("Book" , "suzan" , R.drawable.ic_launcher_background , "URL"));
+        arrayData.add(new Data("Book" , "suzan" , R.drawable.ic_launcher_background , "URL"));
+        arrayData.add(new Data("Book" , "suzan" , R.drawable.ic_launcher_background , "URL"));
+        arrayData.add(new Data("Book" , "suzan" , R.drawable.ic_launcher_background , "URL"));
+
 
 
         // pdf
