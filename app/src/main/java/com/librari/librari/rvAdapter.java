@@ -2,19 +2,15 @@ package com.librari.librari;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
-
 
 import java.util.ArrayList;
 
@@ -42,6 +38,14 @@ public class rvAdapter extends RecyclerView.Adapter<rvAdapter.viewHolder> {
         holder.bookName.setText(arData.get(position).getBookName());
         holder.bookAuthor.setText(arData.get(position).getBookAuthor());
         holder.bookImage.setImageResource(arData.get(position).getPicture());
+        holder.cardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(activity, PdfActivity.class);
+                i.putExtra("pdf",arData.get(position).getBookLink());
+                activity.startActivity(i);
+            }
+        });
 
     }
 

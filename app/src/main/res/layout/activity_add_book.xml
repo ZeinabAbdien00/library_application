@@ -4,13 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddBook">
+    tools:context=".AddBook"
+    android:background="@drawable/deash1">
 
     <EditText
         android:id="@+id/add_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="406dp"
+        android:layout_height="47dp"
         android:layout_marginTop="160dp"
+        android:background="#80EA9D2F"
         android:hint="Enter book name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -19,21 +21,23 @@
 
     <EditText
         android:id="@+id/add_author"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="236dp"
+        android:layout_width="406dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="240dp"
+        android:background="#80EA9D2F"
         android:hint="Enter book author"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/add_URL"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="406dp"
+        android:layout_height="47dp"
         android:layout_marginTop="308dp"
         android:hint="Enter book URL"
+        android:background="#80EA9D2F"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +48,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="ADD"
+        android:backgroundTint="#F19647"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

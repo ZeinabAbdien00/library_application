@@ -34,6 +34,15 @@ public class MainActivity extends AppCompatActivity {
                 }
             });
 
+            visitor.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent2 = new Intent(MainActivity.this, VisitorFragment.class);
+                    startActivity(intent2);
+
+                }
+            });
+
 
         visitor.setOnClickListener(new View.OnClickListener() {
             @Override
