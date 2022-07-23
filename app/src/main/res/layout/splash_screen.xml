@@ -10,15 +10,15 @@
         android:layout_width="240dp"
         android:layout_height="240dp"
         android:layout_centerInParent="true"
-        android:src="@drawable/ic_launcher_background"/>
+        android:src="@drawable/splash"/>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/logo_id"
         android:layout_centerHorizontal="true"
-        android:text="Splash Screen"
-        android:textSize="30dp"
-        android:textColor="@color/blue"/>
+        android:text="Levi Library"
+        android:textColor="#717488"
+        android:textSize="30dp" />
 
 </RelativeLayout>

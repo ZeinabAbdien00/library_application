@@ -3,6 +3,7 @@ package com.librari.librari;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,15 +26,17 @@ public class MainActivity extends AppCompatActivity {
         visitor = findViewById(R.id.visitor);
         btn = findViewById(R.id.btn);
 
-        if(username.getText().toString()=="levi" & password.getText().toString()=="library")
-        {
             btn.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-
+                    if(username.getText().toString().equals("levi") & password.getText().toString().equals("library"))
+                    {
+                        Intent intent = new Intent(MainActivity.this, Visitor.class);
+                        startActivity(intent);
+                    }
                 }
             });
-        }
+
 
         visitor.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,7 +44,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
 
     }
 }

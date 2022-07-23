@@ -2,8 +2,6 @@ package com.librari.librari;
 
 import android.os.Bundle;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -12,6 +10,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.librari.librari.databinding.ActivityAdminFragmentBinding;
 
 import java.util.ArrayList;
@@ -41,7 +40,11 @@ public class AdminFragment extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
+        //Intent intent2 = getIntent();
+
         arrayData = new ArrayList<>();
+
+
 
         // pdf
 
